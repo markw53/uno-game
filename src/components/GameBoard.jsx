@@ -85,7 +85,7 @@ const GameBoard = () => {
           <div className="discard-pile my-4">
             <h3 className="font-semibold mb-2">Discard Pile</h3>
             {discardPile.length > 0 && (
-              <Card card={discardPile[discardPile.length - 1]} />
+              <Card card={discardPile[discardPile.length - 1]} chosenColor={chosenColor} />
             )}
           </div>
           {players.map((player, index) => (

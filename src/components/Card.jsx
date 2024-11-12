@@ -1,14 +1,15 @@
 import React from 'react';
 
-const Card = ({ card, onClick }) => {
+const Card = ({ card, onClick, chosenColor }) => {
   const { color, value } = card;
 
+  // Define the color classes for regular cards
   const colorClasses = {
     red: 'bg-red-500',
     yellow: 'bg-yellow-400',
     green: 'bg-green-500',
     blue: 'bg-blue-500',
-    wild: 'bg-gray-700 text-white',
+    wild: chosenColor ? `bg-${chosenColor}-500` : 'bg-gray-700', // Use chosenColor for wild cards
   };
 
   return (
