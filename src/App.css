@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.deck,
+.discard-pile,
+.player-hand {
+  border: 1px solid #333;
+  margin: 1em;
+  padding: 1em;
+  display: inline-block;
+}
+
+.card {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #000;
+  width: 40px;
+  height: 60px;
+  text-align: center;
+}
+
+.card.red { background-color: #ff4d4d; }
+.card.yellow { background-color: #ffeb3b; }
+.card.green { background-color: #4caf50; }
+.card.blue { background-color: #2196f3; }
+
+.current-player {
+  border: 2px solid #4caf50;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card.red { background-color: #ff4d4d; }
+.card.yellow { background-color: #ffeb3b; }
+.card.green { background-color: #4caf50; }
+.card.blue { background-color: #2196f3; }
+.card.wild { background-color: #000; color: #fff; }
